@@ -134,6 +134,24 @@ footer {
     
 }
 
+ ::-webkit-input-placeholder {
+     text-align:right; 
+}
+
+input:-moz-placeholder {
+    text-align:right; 
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=tel]:focus {
+    border: solid;
+}
+
+.p_intro,
+    h2 {
+        text-align: center;
+}
 
 @media screen and (min-width: 760px) {
 
@@ -141,9 +159,41 @@ footer {
     max-width: 480px;
   }
     
- .p_intro,
-    h2 {
-        text-align: center;
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select {
+     width: 50%;
+    
         
-    }    
+    } 
+    
+    label[for="name"],
+    label[for="mail"],
+    label[for="phone"],
+    label[for="address"],
+    label[for="city"],
+    label[for="state"],
+    label[for="zip"] {
+        width: 40%;
+    }
+    
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+label[for="name"],
+label[for="mail"],
+label[for="phone"],
+label[for="address"],
+label[for="city"],
+label[for="state"],
+label[for="zip"],     
+    select {
+        display: inline-block;
+    }
+
 }
